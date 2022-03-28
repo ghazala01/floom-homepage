@@ -1,0 +1,121 @@
+.whycontainer {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.whycontainer > h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.whycontainer__top {
+  display: flex;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.whycontainer__middle {
+  font-size: 1.188rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #e3f1e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.whycontainer__bottom {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fafafa;
+}
+
+.whycontainer__bottom > p {
+  text-align: center;
+}
+
+.whycontainer__bottom > div {
+  display: flex;
+  flex: 1;
+}
+
+.whycontainer__bottom > div > ul {
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.whycontainer__bottom > div > ul > li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.whycontainer__bottom > div > ul > li > a {
+  color: #202523;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease-in;
+}
+
+.whycontainer__bottom > div > ul > li > a:hover {
+  color: #e58563;
+}
+
+.whycard {
+  display: flex;
+  flex-direction: column;
+}
+
+.whycard > div > h1 {
+  font-size: 1.188rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.whycard > div > p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.whycard > img {
+  height: 3rem;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  vertical-align: bottom;
+}
+
+@media only screen and (max-width: 900px) {
+  .whycontainer__top {
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .whycontainer__middle {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .whycard{
+    flex-direction: row;
+    text-align: left;
+  }
+  .whycard > img {
+    width: 50%;
+  }
+  .whycard > div > p {
+    width: 100%;
+  }
+  .whycard:not(:last-child){
+    margin-bottom: 3rem;
+  }
+  .whycontainer > h1 {
+    font-size: 1.75rem;
+  }
+}

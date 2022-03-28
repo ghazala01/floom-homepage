@@ -1,0 +1,60 @@
+.occasions__right {
+  display: flex;
+  align-items: center;
+  background-color: #ffefe9;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.occasions__right > div {
+  text-align: center;
+}
+
+.occasions__right > div > h6 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 200;
+}
+
+.occasions__right > div > h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 500;
+  width: 90%;
+  margin: 7rem auto 1rem auto;
+}
+
+.occasions__right > div > p {
+  line-height: 1.5;
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.occasions__right > div > button {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.occasions__left > img {
+  width: 99.95%;
+  height: 100%;
+  object-fit: fill;
+}
+
+@media only screen and (max-width: 900px) {
+  .occasions__left > img{
+    width: 96.7vw;
+    object-fit: cover;
+  }
+  .occasions__right > div > h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .occasions__left > img{
+    width: 100vw;
+  }
+}

@@ -1,0 +1,121 @@
+.footer {
+  background-image: linear-gradient(
+    135deg,
+    rgb(176, 218, 230),
+    rgb(255, 214, 199) 60%,
+    rgb(255, 214, 199)
+  );
+  padding: 3rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.footer__email {
+  display: flex;
+  flex-direction: column;
+  padding-right: 7rem;
+  margin-bottom: 4rem;
+}
+
+.footerLinks__top > a {
+  margin-right: 2.5rem;
+}
+
+.footerLinks__bottom {
+  display: flex;
+}
+
+.footerBottom__columns {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.footerBottomColumns--padding {
+  padding-right: 5rem;
+}
+
+.footerBottom__columns > div > ul {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footerBottom__columns > div > ul > li {
+  margin-bottom: 0.5rem;
+}
+
+.footerBottom__columns > div > ul > li > a {
+  text-decoration: none;
+  color: #202523;
+}
+
+.footerBottom__icons {
+  display: flex;
+}
+
+.footerBottom__icons > a {
+  margin-top: 1rem;
+  color: #202523;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footerBottom__places {
+  transition: opacity 0.15s ease-in;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 0.4;
+}
+
+.footerBottom__places:hover {
+  opacity: 1;
+}
+
+.footerBottom__places > span {
+  padding: 0.25rem 0.5rem;
+  text-decoration: underline;
+}
+
+.footerBottom__copyright {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footerBottom__copyright > img {
+  width: 4rem;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .footerLinks__top > a {
+    margin-right: 1.5rem;
+  }
+
+  .footerBottom__columns {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .footerBottom__icons {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__email {
+    padding-right: 0;
+  }
+  .footerBottom__places {
+    margin-top: 4rem;
+  }
+}

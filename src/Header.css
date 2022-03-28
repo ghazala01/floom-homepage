@@ -1,0 +1,175 @@
+.header {
+  margin-top: 0.2rem;
+  height: 75vh;
+}
+
+.header__one {
+  background-image: url('https://floom.imgix.net/general/Mothers-Day-Landscape-2_190524_160331.jpg?auto=format&crop=focalpoint&fit=crop&fm=pjpg&fp-x=0.5&fp-y=0.5&ixlib=php-1.1.0&q=70&w=1600&s=c9fb4981707b2c480d1ddddbe4f9b945');
+  padding-top: 5rem !important;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 65%;
+  border-right: 0.5rem solid #fff;
+}
+
+.header__one > div {
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.header__one > div > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 32rem;
+  margin: 0 auto;
+  line-height: 1.25;
+}
+
+.headerOne__input {
+  padding: 0.25rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 0.25rem;
+  border: 1px solid #deeaee;
+  box-shadow: -1px 3px 9px 2px rgb(43 51 48 / 10%);
+  background-color: #fff;
+}
+
+.headerOne__input > input {
+  font-size: 0.875rem;
+  text-align: left;
+  margin-right: 0.25rem;
+  line-height: 2;
+  height: 3rem;
+  width: 7.5rem;
+  background-color: #fff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: none;
+}
+
+.headerOne__input > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding-left: 0.75rem;
+  line-height: 2;
+  height: 3rem;
+  width: 8.5rem;
+  border: none;
+  background-position: right 7% center;
+  background-repeat: no-repeat;
+  background-size: 0.375rem;
+  background-image: url('https://d34g78fsj6jubz.cloudfront.net/images/dropdown-arrows-black.svg');
+}
+
+.headerOne__input > img {
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  padding-left: 1rem;
+  vertical-align: middle;
+}
+
+.headerOne__reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.header__two {
+  background-image: url('https://floom.imgix.net/products/Untitled-design-2.png?auto=format&crop=focalpoint&fit=crop&fm=pjpg&fp-x=0.585&fp-y=0.525&ixlib=php-1.1.0&q=80&w=900&s=425d54412a33248b5501c7b284d17f5c');
+  height: 50%;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  border-bottom: 0.25rem solid #fff;
+}
+
+.header__three {
+  background-image: url('https://floom.imgix.net/products/Mothers-Day-Category-web-light_190311_173854.jpg?auto=format&crop=focalpoint&fit=crop&fm=pjpg&fp-x=0.5&fp-y=0.5&ixlib=php-1.1.0&q=70&w=900&s=a67d9c3dff7dc5819c03f74f460e7ae9');
+  border-top: 0.25rem solid #fff;
+}
+
+.header__two,
+.header__three {
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover !important;
+  cursor: pointer;
+  
+}
+
+.header__two > div > h1,
+.header__three > div > h1 {
+  font-size: 1.688rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.header__two > div,
+.header__three > div {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.header__two > div:hover,
+.header__three > div:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.header__two > div > a,
+.header__three > div > a {
+  color: #202523;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+.header__two > div > p,
+.header__three > div > p {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    height: max-content;
+  }
+  .header__one {
+    border-right: none;
+    border-bottom: 0.5rem solid #fff;
+  }
+  .headerOne__input > button {
+    display: block;
+    width: 100%;
+  }
+  .headerOne__input {
+    width: max-content;
+    margin: 3rem auto;
+    padding: 0.25rem 0;
+  }
+  .header__one > div > h1 {
+    font-size: 1.75rem;
+    max-width: 27rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header__one > div > h1 {
+    font-size: 1.5rem;
+    max-width: 20rem;
+  }
+}
